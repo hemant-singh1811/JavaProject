@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	 version="4.0">
+    
+     <!--method -1 to create servlets-->
+    
+    <servlet>
+        <servlet-name>
+            firstServlets
+        </servlet-name>
+        
+        <servlet-class>
+            com.servlets.firstServlets
+        </servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>firstServlets</servlet-name>
+        <url-pattern>/web</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- method -2 to create servlets-->
+
+    <servlet>
+        <servlet-name>
+            secondServlets
+        </servlet-name>
+        
+        <servlet-class>
+            com.servlets.secondServlets
+        </servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>secondServlets</servlet-name>
+        <url-pattern>/web2</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <!-- method -3 to create servlets-->
+
+    <servlet>
+        <servlet-name>
+            thirdServlets
+        </servlet-name>
+        
+        <servlet-class>
+            com.servlets.thirdServlets
+        </servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>thirdServlets</servlet-name>
+        <url-pattern>/web3</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
